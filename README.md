@@ -41,6 +41,6 @@ O agente utiliza arquitetura **RAG (Retrieval-Augmented Generation)** para forne
 * `/tests`: Documentação dos **Test Cases** que validam a eficácia do agente.
 
 ---
-![Agente Júpiter](Júpiter Agente - Google Chrome 2026-03-26 12-40-39.gif)
+
 
 > **Nota Técnica:** Este agente foi configurado para priorizar a veracidade dos dados (Anti-Hallucination), admitindo a necessidade de validação humana caso a informação não conste nas bases oficiais indexadas.
