@@ -42,5 +42,9 @@ O agente utiliza arquitetura **RAG (Retrieval-Augmented Generation)** para forne
 
 ---
 
+## 👀 Demonstração em Vídeo
+
+![Demonstração do Júpiter Agente](./assets/demonstracao-jupiter.gif)
+
 
 > **Nota Técnica:** Este agente foi configurado para priorizar a veracidade dos dados (Anti-Hallucination), admitindo a necessidade de validação humana caso a informação não conste nas bases oficiais indexadas.
