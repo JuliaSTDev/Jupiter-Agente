@@ -1,0 +1,41 @@
+{
+  "name": "de676e06-8d0c-42f0-b15e-a673148d4ee2",
+  "displayName": "jupiter-datastore-site",
+  "description": "Conecta com o site para buscar informações gerais sobre a neooh",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "PUBLIC_WEB",
+      "dataStore": "projects/468442148173/locations/global/collections/default_collection/dataStores/site-neooh_1773439361649",
+      "documentProcessingMode": "DOCUMENTS",
+      "engineType": "CHAT_ENGINE",
+      "connectorConfig": {
+      
+      },
+      "createTime": {
+        "seconds": 1773439366,
+        "nanos": 116000000
+      },
+      "displayName": "site-neooh",
+      "dialogflowAddTime": {
+        "seconds": 1773439366,
+        "nanos": 116000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}

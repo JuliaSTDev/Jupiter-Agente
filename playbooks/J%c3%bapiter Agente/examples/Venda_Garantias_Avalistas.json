@@ -1,0 +1,62 @@
+{
+  "name": "4ab53313-3fb7-4a74-9245-cdfb6e1b6e11",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Quais são as garantias específicas (avalistas) que protegem esta 1ª emissão de Notas Comerciais e quem são as entidades por trás delas?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Esta operação possui uma estrutura de garantia firme. Os Avalistas que protegem os detentores dos títulos são a LRC Midia Out Of Home Ltda., a JC3D Inovação Multimidia Ltda. e a SP 360 Comunicação Ltda.. Essas entidades representam o core operacional da rede de telas e tecnologia da NEOOH, garantindo o cumprimento das obrigações da emissora",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Venda_Garantias_Avalistas",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Treinar o agente para listar os avalistas (LRC Midia, JC3D e SP 360), explicando a estrutura de garantia firme que protege a 1ª emissão de Notas Comerciais.",
+  "tokenCount": 392,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

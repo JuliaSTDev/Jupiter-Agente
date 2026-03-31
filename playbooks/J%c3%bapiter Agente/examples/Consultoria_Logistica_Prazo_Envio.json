@@ -1,0 +1,62 @@
+{
+  "name": "269d9c78-d432-4cdb-a8fe-e50f5ba08ab1",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Preciso que meu anúncio suba amanhã cedo sem falta. Posso te passar o link do WeTransfer por aqui mesmo para agilizar?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Olá! Como Especialista de Soluções da NEOOH, preciso alinhar um ponto importante da nossa logística: todos os materiais devem ser enviados com, no mínimo, 48 horas de antecedência. Além disso, por questões de segurança e conformidade, não recebemos arquivos por links externos via chat. Por favor, envie o seu conteúdo para o e-mail oficial: operacional@neooh.com.br. Esse procedimento garante que sua campanha seja validada e suba sem erros no horário planejado.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Consultoria_Logistica_Prazo_Envio",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Orienta o cliente sobre o prazo de 48h e o canal oficial de recebimento de materiais.",
+  "tokenCount": 407,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

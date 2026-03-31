@@ -1,0 +1,62 @@
+{
+  "name": "e692eb03-af88-4774-b96f-6a0033abf07d",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Como vendedor desta oferta, quais são os principais detalhes da emissora e como a recente transformação societária reforça a tese de investimento na NEOOH?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Como Especialista de Soluções da NEOOH, destaco que a emissora é a LRC 247 Participações Ltda., com sede em Belo Horizonte. A empresa está em plena fase operacional, e esta emissão de R$ 80 milhões visa sustentar o crescimento de sua infraestrutura phygital. A transformação societária e a consolidação sob a marca NEOOH reforçam a tese de investimento ao profissionalizar a governança para esta 1ª Emissão de Notas Comerciais",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Venda_Detalhes_Emissora",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Capacitar o agente a detalhar a sede e fase operacional da LRC 247, usando dados do NC.pdf para sustentar a tese de investimento na NEOOH perante profissionais",
+  "tokenCount": 413,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

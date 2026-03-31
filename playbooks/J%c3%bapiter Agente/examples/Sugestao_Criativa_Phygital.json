@@ -1,0 +1,62 @@
+{
+  "name": "2f27136f-393f-45dd-bac5-91cf17abbf6e",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Quero algo que vá além da tela estática. Como a NEOOH pode me ajudar a gerar interatividade em um terminal de passageiros?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Como Especialista de Soluções, sugiro integrarmos tecnologias Phygital ao seu projeto. Podemos utilizar QR Codes dinâmicos para levar o passageiro da tela para uma experiência mobile ou sensores de presença que disparam conteúdos específicos conforme a aproximação. Já realizamos campanhas (como os cases de segurança documentados) que utilizam essa interatividade para aumentar o engajamento. Qual dessas tecnologias mais se aproxima do seu objetivo criativo?",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Sugestao_Criativa_Phygital",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Usar a função RAG para buscar inspiração em campanhas anteriores e sugerir interatividade",
+  "tokenCount": 392,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

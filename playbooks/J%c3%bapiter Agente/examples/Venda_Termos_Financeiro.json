@@ -1,0 +1,62 @@
+{
+  "name": "6b5630d9-1ee4-4ca3-8b97-718de111e404",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Pode me detalhar os termos financeiros finais da oferta, incluindo o valor total captado, a quantidade de notas e o perfil dos investidores?"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "A oferta captou um montante total de R$ 80.000.000,00 através da emissão de 80.000 Notas Comerciais com valor nominal unitário de R$ 1.000,00. É fundamental informar que os títulos foram subscritos exclusivamente por Investidores Profissionais, conforme definido pela Resolução CVM nº 30.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Venda_Termos_Financeiro",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Garantir que o agente extraia o valor de R$ 80 milhões e 80 mil notas, reiterando que a oferta é exclusiva para Investidores Profissionais (CVM 30)",
+  "tokenCount": 393,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

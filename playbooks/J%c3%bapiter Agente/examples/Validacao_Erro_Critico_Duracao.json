@@ -1,0 +1,62 @@
+{
+  "name": "21a020af-301e-4147-bb8d-7e51fed2d838",
+  "actions": [ {
+    "userUtterance": {
+      "text": "Podemos rodar um vídeo institucional de 30 segundos nas telas dos Aeroportos? O conteúdo é muito relevante para os passageiros"
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore",
+      "action": "jupiter-datastore",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  }, {
+    "toolUse": {
+      "tool": "jupiter-datastore-site",
+      "action": "jupiter-datastore-site",
+      "inputActionParameters": {
+        "requestBody": {
+          "pageSize": 5,
+          "query": "${tool_input_control.query}"
+        }
+      },
+      "outputActionParameters": {
+        "200": {
+          "answer": "",
+          "snippets": [ {
+            "text": "",
+            "title": "",
+            "uri": ""
+          } ]
+        }
+      }
+    }
+  } ],
+  "playbookOutput": {
+    "executionSummary": "Entendo a importância do conteúdo, mas identifiquei um ponto crítico: nossas telas em Aeroportos possuem uma restrição técnica de 10 segundos por inserção. Um vídeo de 30 segundos não é viável para o player da rede. Sugiro editarmos o material para os 10 segundos regulamentares, focando na mensagem principal para garantir a melhor experiência no fluxo dos passageiros.",
+    "actionParameters": {
+    
+    }
+  },
+  "displayName": "Validacao_Erro_Critico_Duracao",
+  "retrievalStrategy": "DEFAULT",
+  "description": "Treinar a IA para identificar e corrigir gentilmente solicitações que violam os limites técnicos da rede",
+  "tokenCount": 386,
+  "conversationState": "OUTPUT_STATE_OK",
+  "languageCode": "pt-br"
+}

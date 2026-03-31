@@ -1,0 +1,42 @@
+{
+  "name": "a1bc47e1-2174-4caf-8947-174c992fdfbb",
+  "displayName": "jupiter-datastore",
+  "description": "Utilize este data store para verificar informações sobre campanhas de phydigital já realizadas pela Neooh. Note que nem sempre serão campanhas isoladas; há exemplos, por exemplo, em terminais rodoviários. O repositório contém detalhes sobre pontos de mídia estratégicos, formatos de mídia e suas características.\nUse esses dados para instruir os clientes, apresentando a eles as opções de informações que você pode retornar.\nNa página de \"Ofertas Públicas\", constam detalhes sobre as propostas vigentes. Quando solicitado pelo usuário, busque as informações de resposta diretamente na pasta Ofertas-Públicas.",
+  "dataStoreSpec": {
+    "dataStoreConnections": [ {
+      "dataStoreType": "CONNECTOR",
+      "dataStore": "projects/bootcam-llm-ai3/locations/global/collections/default_collection/dataStores/jupiter-datastore_1773360844869_gcs_store",
+      "documentProcessingMode": "DOCUMENTS",
+      "engineType": "SEARCH_ENGINE",
+      "connectorConfig": {
+        "collection": "projects/bootcam-llm-ai3/locations/global/collections/jupiter-datastore_1773360844869",
+        "dataSource": "gcs"
+      },
+      "createTime": {
+        "seconds": 1773360844,
+        "nanos": 894000000
+      },
+      "displayName": "gcs_store",
+      "dialogflowAddTime": {
+        "seconds": 1773360844,
+        "nanos": 894000000
+      }
+    } ],
+    "models": {
+      "summarizationModel": {
+        "model": "default"
+      },
+      "rewriterModel": {
+        "model": "default"
+      }
+    },
+    "groundingSettings": {
+    
+    },
+    "payloadSettings": {
+    
+    },
+    "mode": "MODE_DEFAULT"
+  },
+  "toolType": "CUSTOMIZED_TOOL"
+}
