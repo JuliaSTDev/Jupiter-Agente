@@ -43,7 +43,6 @@ O agente utiliza arquitetura **RAG (Retrieval-Augmented Generation)** para forne
 ---
 
 ## 👀 Demonstração em Vídeo
-
 ![Demonstração do Júpiter Agente](./assets/demonstracao-jupiter.gif)
 
 
